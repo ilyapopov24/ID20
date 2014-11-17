@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\ID20\app\build\intermediates\pre-dexed\debug\classes-bd9fa752351f179f18fbc118400ddde90783e40a.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\ID20\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\5.0.89\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d71573c9c5ea98a8db47ad6ff993a63d492b3bfa"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\ID20\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-f866823c0af3b9a665cdc5eaec074715a9cebd8a.jar"
+        jar="D:\Program Files\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+
+</pre-dex-items>

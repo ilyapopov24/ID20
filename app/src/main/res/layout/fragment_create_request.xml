@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ЗАГОЛОВОК -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TitleTextViewStyle"
+            android:text="Создание заявки"/>
+
+        <!-- ПОЛЯ ВВОДА -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:orientation="vertical"
+            android:id="@+id/tableLayout">
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditTextStyle"
+                android:hint="Дата поездки"
+/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Время поездки"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"
+/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/secondName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Фамилия"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Имя"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/patronymic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Отчество"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/contactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Контактный телефон"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/addressFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Адрес подачи"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/intermediatePoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Промежуточные точки"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/additionalInstructions1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Дополнительные инструкции"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/addressTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Адрес назначения"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/additionalInstructions2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Дополнительные инструкции"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/purpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Цель поездки"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!-- RADIOBUTTONs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:background="@android:color/white">
+
+            <ru.id20.android.view.CustomTextView
+                android:id="@+id/passenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Пассажир:"/>
+
+            <RadioGroup
+                android:id="@+id/passengerRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:id="@+id/passengerRadioButtonYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Да"/>
+
+                <RadioButton
+                    android:id="@+id/passengerRadioButtonNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Нет"/>
+
+            </RadioGroup>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/fuullPassengerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/EditTextStyle"
+                android:background="@drawable/grey_border"
+                android:hint="ФИО пассажира"/>
+
+            <ru.id20.android.view.CustomTextView
+                android:id="@+id/procuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Необходимость в доверенности"/>
+
+            <RadioGroup
+                android:id="@+id/procuratoryRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:id="@+id/procuratoryRadioButtonYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Да"/>
+
+                <RadioButton
+                    android:id="@+id/procuratoryRadioButtonNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Нет"/>
+
+            </RadioGroup>
+
+            <ru.id20.android.view.CustomTextView
+                android:id="@+id/permit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Необходимость в пропуске"/>
+
+            <RadioGroup
+                android:id="@+id/permitRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:id="@+id/permitRadioButtonYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Да"/>
+
+                <RadioButton
+                    android:id="@+id/permitRadioButtonNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Нет"/>
+
+            </RadioGroup>
+
+            <ru.id20.android.view.CustomButton
+                android:id="@+id/createTaskButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/VButtonStyle"
+                android:text="Создать заявку"
+                                          />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

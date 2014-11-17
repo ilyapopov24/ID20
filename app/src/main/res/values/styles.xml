@@ -1,0 +1,99 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBar.Main</item>
+    </style>
+
+    <style name="NoActionBarTheme" parent="AppTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Стиль ActionBar -->
+    <style name="ActionBar.Main" parent="android:Widget.ActionBar">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Main.Text</item>
+        <item name="android:logo">@drawable/transparent</item>
+        <item name="android:title">""</item>
+    </style>
+
+    <!-- Цвета текста заголовка ActionBar -->
+    <style name="ActionBar.Main.Text" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CustomSeekBar1" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/custom_seekbar</item>
+        <item name="android:thumbOffset">0dip</item>
+    </style>
+
+    <style name="WhiteTriangle">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginTop">-32dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/white_triangle</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:ellipsize">start</item>
+    </style>
+
+    <style name="TitleTextViewStyle">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/background_dark_blue</item>
+    </style>
+
+    <style name="VButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/selector_v_button_background</item>
+        <item name="android:textColor">@drawable/selector_v_button_text</item>
+        <item name="android:drawableLeft">@drawable/selector_v_button_arrow</item>
+        <item name="android:drawableStart">@drawable/selector_v_button_arrow</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:drawablePadding">-25dp</item>
+    </style>
+
+    <style name="ArchiveButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/selector_archive_button_background</item>
+        <item name="android:textColor">@drawable/selector_archive_button_text</item>
+        <item name="android:drawableLeft">@drawable/selector_archive_button_icon</item>
+        <item name="android:drawableStart">@drawable/selector_archive_button_icon</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:drawablePadding">-15dp</item>
+    </style>
+
+    <style name="EditTextDateTimeStyle">
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:ellipsize">start</item>
+    </style>
+
+</resources>

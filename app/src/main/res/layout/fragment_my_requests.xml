@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- ЗАГОЛОВОК -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TitleTextViewStyle"
+            android:text="Мои заявки"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:orientation="horizontal">
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/allTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="Все"/>
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/newTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="Новые"/>
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/inProcessTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="В обработке"/>
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/acceptedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="Принятые"/>
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/executedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="Выполненные"/>
+
+        </LinearLayout>
+
+        <!-- СПИСОК ЗАЯВОК -->
+        <ListView
+            android:id="@+id/requestListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/horizontal_margin"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/horizontal_margin"/>
+
+        <!-- АРХИВ ЗАЯВОК -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:background="@color/background_dark_blue">
+
+            <ru.id20.android.view.CustomButton
+                android:id="@+id/archiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                style="@style/ArchiveButtonStyle"
+                android:text="Архив заявок"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- ПОДАТЬ ЗАЯВКУ -->
+    <LinearLayout
+        android:id="@+id/createRequestLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_main_menu_background"
+        android:gravity="center_vertical|start"
+        android:layout_weight="1"
+        android:clickable="true">
+
+        <!-- ИКОНКА -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/requests_create"/>
+
+        <!-- НАДПИСЬ -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginEnd="-2dp"
+            android:textSize="26sp"
+            android:textColor="@color/register_button_text"
+            android:text="@string/create_requests"/>
+
+    </LinearLayout>
+
+    <!-- МОИ ЗАЯВКИ -->
+    <LinearLayout
+        android:id="@+id/myRequestsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_main_menu_background"
+        android:gravity="center_vertical|start"
+        android:layout_weight="1"
+        android:clickable="true">
+
+        <!-- ИКОНКА -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/requests_my"/>
+
+        <!-- НАДПИСЬ -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginEnd="-2dp"
+            android:textSize="26sp"
+            android:textColor="@color/register_button_text"
+            android:text="@string/my_requests"/>
+
+    </LinearLayout>
+
+    <!-- ПРОФИЛЬ -->
+    <LinearLayout
+        android:id="@+id/profileLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_main_menu_background"
+        android:gravity="center_vertical|start"
+        android:layout_weight="1"
+        android:clickable="true">
+
+        <!-- ИКОНКА -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/bottom_bar_button_4"/>
+
+        <!-- НАДПИСЬ -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginEnd="-2dp"
+            android:textSize="26sp"
+            android:textColor="@color/register_button_text"
+            android:text="@string/profile"/>
+
+    </LinearLayout>
+
+</LinearLayout>

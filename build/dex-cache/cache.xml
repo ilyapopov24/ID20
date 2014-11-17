@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\ID20byPopov\app\build\pre-dexed\debug\firebase-simple-login-1.4.2-2925e0e95820733433f44ba046a760c998e299fa.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\ID20byPopov\app\libs\firebase-simple-login-1.4.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="792f60dd571282f340035bdc4b7c79df600b830b"/>
+    <item
+        dex="C:\Users\hetfieldan24\AndroidStudioProjects\ID20byPopov\app\build\pre-dexed\debug\firebase-client-jvm-1.0.16-97338c99150092c2e82cbaaef8587eca8692f4d0.jar"
+        jar="C:\Users\hetfieldan24\AndroidStudioProjects\ID20byPopov\app\libs\firebase-client-jvm-1.0.16.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="0e1974785797fe0df9df5c8305cc1a04cff46b06"/>
+
+</pre-dex-items>

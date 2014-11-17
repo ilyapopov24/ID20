@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ID20</string>
+    <string name="content_description">description</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tasks">Tasks</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_create_task">CreateTask</string>
+    <string name="title_activity_date_picker">DatePicker</string>
+    <string name="login_password">usermir</string>
+
+    <!-- ВХОД В СИСТЕМУ -->
+    <string name="enter_title">Система электронного управления для копроративных автопарков</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Войти</string>
+    <string name="registration">Регистрация</string>
+
+    <!-- ГЛАВНЕ МЕНЮ -->
+    <string name="requests">Заявки</string>
+    <string name="tasks">Задачи</string>
+    <string name="route_lists">Путевые листы</string>
+    <string name="settings">Настройки</string>
+
+    <!-- ЗАЯВКИ -->
+    <string name="create_requests">Подать заявку</string>
+    <string name="my_requests">Мои заявки</string>
+    <string name="profile">Профиль</string>
+
+    <!-- ЗАДАЧИ -->
+    <string name="new_tasks">Новые задачи</string>
+    <string name="all_tasks">Все задачи</string>
+    <string name="messages">Сообщения</string>
+
+    <!-- ПУТЕВЫЕ ЛИСТЫ -->
+    <string name="create_route_list">Создать путевой лист</string>
+
+    <!-- НАСТРОЙКИ -->
+    <string name="surname">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="middle_name">Отчество</string>
+    <string name="phone">Телефон</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="old_password">Старый пароль</string>
+    <string name="new_password1">Новый пароль</string>
+    <string name="new_password2">Повторите пароль</string>
+    <string name="change_user_data">Изменить данные</string>
+    <string name="save">Сохранить</string>
+    <string name="title_activity_create_way_bill">CreateWayBillActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_test_google">TestGoogleActivity</string>
+    <string name="title_activity_send_postrequest">SendPOSTRequest</string>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/item_red_border_request_list">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp">
+
+        <ru.id20.android.view.CustomBoldTextView
+            android:id="@+id/numberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/background_dark_blue"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:text="№ 456"/>
+
+        <ru.id20.android.view.CustomTextView
+            android:id="@+id/addressTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:paddingRight="45dp"
+            android:paddingEnd="45dp"
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/address_arrow"
+            android:drawableEnd="@drawable/address_arrow"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/grey_text_color"
+            android:text="ул. Бочкова, дом 7"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="2dp">
+
+        <ru.id20.android.view.CustomTextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:textColor="@color/background_dark_blue"
+            android:text="21.12.13"/>
+
+        <ru.id20.android.view.CustomTextView
+            android:id="@+id/addressTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/grey_text_color"
+            android:text="ул. Кавалеридзе, дом 7, стр.2"/>
+
+    </TableRow>
+
+</TableLayout>

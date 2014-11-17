@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ЗАГОЛОВОК -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/id20_logo"
+            android:contentDescription="@string/content_description"/>
+
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:lines="3"
+            android:text="@string/enter_title"/>
+
+        </LinearLayout>
+
+        <View style="@style/WhiteTriangle"/>
+
+        <!-- ПОЛЯ ВВОДА И КНОПКИ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_gravity="center"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                style="@style/EditTextStyle"
+                android:hint="@string/login"
+                android:text="@string/login_password"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                style="@style/EditTextStyle"
+                android:imeOptions="actionDone"
+                android:hint="@string/password"
+                android:text="@string/login_password"/>
+
+            <ru.id20.android.view.CustomButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_gravity="center"
+                android:onClick="onClickLogin"
+                android:background="@drawable/selector_enter_button_background"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@drawable/selector_enter_button_text"
+                android:drawableRight="@drawable/selector_enter_button_arrow"
+                android:drawableEnd="@drawable/selector_enter_button_arrow"
+                android:paddingLeft="0dp"
+                android:paddingStart="0dp"
+                android:paddingRight="65dp"
+                android:paddingEnd="65dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:drawablePadding="-75dp"
+                android:text="@string/enter"/>
+
+            <ru.id20.android.view.CustomButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="@drawable/selector_register_button_text"
+                android:background="@null"
+                android:onClick="onClickReg"
+                android:textSize="20sp"
+                android:text="@string/registration"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+	<color name="symptom_color_selected">#003366</color>
+	<color name="reaction_color_selected">#003366</color>
+
+    <color name="journal_entry_listitem_text_color">#003366</color>
+    <color name="note_text_disabled">#333333</color>
+    -->
+
+    <color name="background_main_menu_color">#fa3238</color>
+
+    <color name="static_text_color">#003366</color>
+
+    <color name="grey_border_color">#bfbfbf</color>
+    <color name="grey_text_color">#808080</color>
+
+    <color name="background_dark_blue">#21345e</color>
+    <color name="background_bottom_bar">#14202d</color>
+
+    <color name="enter_button_text">#65ab00</color>
+    <color name="enter_button_text_pressed">#ffffff</color>
+
+    <color name="register_button_text">#e6e6e6</color>
+    <color name="register_button_text_pressed">#e21e24</color>
+
+    <color name="border_red_request_list">#e31e24</color>
+    <color name="border_orange_request_list">#ff9000</color>
+    <color name="border_green_request_list">#009523</color>
+    <color name="border_blue_request_list">#3d9ee8</color>
+    <color name="border_grey_request_list">#cccccc</color>
+
+    <color name="gradient_menu_start_color">#14202d</color>
+    <color name="gradient_menu_end_color">#0b121b</color>
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ЗАГОЛОВОК НАСТРОЙКИ -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TitleTextViewStyle"
+            android:text="@string/settings"/>
+
+        <!-- ПОЛЯ ВВОДА -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:orientation="vertical"
+            android:background="@color/background_dark_blue">
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/surnameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/surname"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                style="@style/EditTextStyle"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/middleNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/middle_name"
+                android:inputType="textPersonName"
+                android:imeOptions="actionNext"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:imeOptions="actionNext"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/loginEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <ru.id20.android.view.CustomButton
+                android:id="@+id/changeUserDataButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/VButtonStyle"
+                android:text="@string/change_user_data"/>
+
+        </LinearLayout>
+
+        <!-- ЗАГОЛОВОК ИЗМЕНИТЬ ПАРОЛЬ -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:text="@string/change_password"/>
+
+        <!-- ПОЛЯ ВВОДА -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:orientation="vertical"
+            android:background="@color/background_dark_blue">
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/oldPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/old_password"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext"
+                style="@style/EditTextStyle"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/newPasswordEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/new_password1"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+            <ru.id20.android.view.CustomEditText
+                android:id="@+id/newPasswordEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/new_password2"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                style="@style/EditTextStyle"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <ru.id20.android.view.CustomButton
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/VButtonStyle"
+                android:text="@string/save"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
+    <RelativeLayout
+        android:id="@+id/titleBarRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/id20_logo"/>
+
+    </RelativeLayout>
+
+    <!-- ЗАЯВКИ -->
+    <LinearLayout
+        android:id="@+id/requestsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_main_menu_background"
+        android:gravity="center_vertical|start"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="onClickRequests">
+
+        <!-- ИКОНКА -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/bottom_bar_button_1"/>
+
+        <!-- НАДПИСЬ -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginEnd="-2dp"
+            android:textSize="26sp"
+            android:textColor="@color/register_button_text"
+            android:text="@string/requests"/>
+
+        <!-- КРУЖОК -->
+        <FrameLayout
+            android:id="@+id/requestsCountFrameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/red_circle">
+
+            <ru.id20.android.view.CustomTextView
+                android:id="@+id/requestsCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:text="28"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- ЗАДАЧИ -->
+    <LinearLayout
+        android:id="@+id/tasksLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_main_menu_background"
+        android:gravity="center_vertical|start"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="onClickTasks">
+
+        <!-- ИКОНКА -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/bottom_bar_button_2"/>
+
+        <!-- НАДПИСЬ -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginEnd="-2dp"
+            android:textSize="26sp"
+            android:textColor="@color/register_button_text"
+            android:text="@string/tasks"/>
+
+        <!-- КРУЖОК -->
+        <FrameLayout
+            android:id="@+id/tasksCountFrameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/red_circle">
+
+            <ru.id20.android.view.CustomTextView
+                android:id="@+id/tasksCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:text="25"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- ПУТЕВЫЕ ЛИСТЫ -->
+    <LinearLayout
+        android:id="@+id/routeListsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_main_menu_background"
+        android:gravity="center_vertical|start"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="onClickRouteLists">
+
+        <!-- ИКОНКА -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/bottom_bar_button_3"/>
+
+        <!-- НАДПИСЬ -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginEnd="-2dp"
+            android:textSize="26sp"
+            android:textColor="@color/register_button_text"
+            android:text="@string/route_lists"/>
+
+        <!-- КРУЖОК -->
+        <FrameLayout
+            android:id="@+id/routeListsCountFrameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/red_circle">
+
+            <ru.id20.android.view.CustomTextView
+                android:id="@+id/routeListsCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:text="2"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- НАСТРОЙКИ -->
+    <LinearLayout
+        android:id="@+id/settingsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_main_menu_background"
+        android:gravity="center_vertical|start"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="onClickSettings">
+
+        <!-- ИКОНКА -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/bottom_bar_button_4"/>
+
+        <!-- НАДПИСЬ -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginEnd="-2dp"
+            android:textSize="26sp"
+            android:textColor="@color/register_button_text"
+            android:text="@string/settings"/>
+
+        <!-- КРУЖОК -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/red_circle">
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- ЗАГОЛОВОК -->
+        <ru.id20.android.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TitleTextViewStyle"
+            android:text="Мои заявки"/>
+
+        <HorizontalScrollView
+            android:id="@+id/hscroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ru.id20.android.view.CustomBoldTextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:text="№"/>
+
+                <ListView
+                    android:id="@+id/number_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/number" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ru.id20.android.view.CustomBoldTextView
+                    android:id="@+id/dateAndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:text="Дата и время подачи а/м"
+                    />
+                <ListView
+                    android:id="@+id/dateAndTime_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/dateAndTime" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/addressFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="Адрес подачи автомобиля"/>
+
+                <ListView
+                    android:id="@+id/addressFrom_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/addressFrom" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/nameOfPassengers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="ФИО пассажира(ов)"
+                android:layout_centerHorizontal="true"
+                />
+
+                <ListView
+                    android:id="@+id/nameOfPassengers_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/nameOfPassengers" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/addressTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="Адрес назначения"
+                android:layout_centerHorizontal="true"/>
+
+                <ListView
+                    android:id="@+id/addressTo_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/addressTo" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="Автомобиль"
+                android:layout_centerHorizontal="true"/>
+
+                <ListView
+                    android:id="@+id/auto_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/auto" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="Водитель"
+                android:layout_centerHorizontal="true"/>
+
+                <ListView
+                    android:id="@+id/driver_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/driver" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="Компания"
+                android:layout_centerHorizontal="true"/>
+
+                <ListView
+                    android:id="@+id/company_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/company" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="Статус"
+                android:layout_centerHorizontal="true"/>
+
+                <ListView
+                    android:id="@+id/status_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/status" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ru.id20.android.view.CustomBoldTextView
+                android:id="@+id/dateCreated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@drawable/selector_type_of_request_text"
+                android:clickable="true"
+                android:text="Дата создания"
+                android:layout_centerHorizontal="true"/>
+
+                <ListView
+                    android:id="@+id/dateCreated_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_type_of_request_text"
+                    android:clickable="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/dateCreated" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- СПИСОК ЗАЯВОК -->
+
+
+        <!-- АРХИВ ЗАЯВОК -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:background="@color/background_dark_blue">
+
+            <ru.id20.android.view.CustomButton
+                android:id="@+id/archiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                style="@style/ArchiveButtonStyle"
+                android:text="Архив заявок"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

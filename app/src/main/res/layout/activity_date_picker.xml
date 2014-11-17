@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF"
+    android:layout_weight="1">
+
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+        <Button
+			android:id="@+id/currentMonth"
+			android:textColor="#000000"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/hat_month_year"
+			android:layout_width="fill_parent"
+			android:layout_height="51dp"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/nextMonth">
+		</Button>
+		<ImageView
+			android:id="@+id/nextMonth"
+			android:src="@drawable/calendar_right_arrow_selector"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp">
+
+		</ImageView>
+
+        <ImageView
+            android:id="@+id/prevMonth"
+            android:src="@drawable/calendar_left_arrow_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp">
+        </ImageView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/calendarheader"
+        android:background="@drawable/blue_bg_with_text"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="center">
+    </Button>
+
+    <LinearLayout
+		android:layout_gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/calendar"
+        android:numColumns="7"
+        android:layout_width="fill_parent"
+        android:layout_height="192dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_weight="0.5"
+        android:choiceMode="singleChoice"
+        >
+    </GridView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/button2"
+            android:layout_alignEnd="@+id/button2"
+            android:layout_weight="0.2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Время"
+                android:id="@+id/time"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Часы"
+                android:id="@+id/hours"
+                android:layout_below="@+id/time"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Минуты"
+                android:id="@+id/minutes"
+                android:layout_alignTop="@+id/seekBar2"
+                android:layout_alignLeft="@+id/hours"
+                android:layout_alignStart="@+id/hours" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/timeNow"
+                android:layout_alignTop="@+id/time"
+                android:layout_toRightOf="@+id/minutes" />
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                style="@style/CustomSeekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/seekbar_thumb"
+                android:progress="0"
+                android:max="23"
+                android:layout_alignTop="@+id/hours"
+                android:layout_alignLeft="@+id/timeNow"
+                android:layout_alignStart="@+id/timeNow" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                style="@style/CustomSeekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/seekbar_thumb"
+                android:progress="0"
+                android:max="59"
+                android:layout_below="@+id/seekBar1"
+                android:layout_alignLeft="@+id/seekBar1"
+                android:layout_alignStart="@+id/seekBar1"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Сегодня"
+            android:id="@+id/buttonNow"
+            android:onClick="clickNow"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Закрыть"
+                android:id="@+id/button2"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="clickCLose"/>
+    </RelativeLayout>
+
+</LinearLayout>
